@@ -4,6 +4,9 @@
  *  Created on: 22/03/2018
  *      Author: carloslinux
  */
+#ifndef GAME_H_
+#define GAME_H_
+
 #include "SDL.h"
 #include "State.h"
 #include <string>
@@ -23,3 +26,5 @@ class Game{
 		SDL_Renderer *renderer;
 		State *state;
 };
+
+#endif /* GAME_H_ */

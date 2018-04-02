@@ -21,7 +21,7 @@ Game.d: ../Game.cpp /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_mixer.h ../Game.h /usr/include/SDL2/SDL.h \
- ../State.h
+ ../State.h ../Sprite.h ../Music.h
 
 /usr/include/SDL2/SDL_image.h:
 
@@ -118,3 +118,7 @@ Game.d: ../Game.cpp /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
 /usr/include/SDL2/SDL.h:
 
 ../State.h:
+
+../Sprite.h:
+
+../Music.h:

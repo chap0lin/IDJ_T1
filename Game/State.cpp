@@ -5,9 +5,16 @@
  *      Author: carloslinux
  */
 #include "State.h"
+#include "Music.h"
 
 State::State(){
 	quitRequested = false;
+	bg.Open("/home/carloslinux/workspace/Game/img/ocean.jpg");
+	bg.SetClip(0,0,1024,600);
+	bg.Render(0,0);
+	music.Open("audio/stageState.ogg");
+	music.Play(1);
+
 
 }
 

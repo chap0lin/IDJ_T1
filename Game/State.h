@@ -8,6 +8,10 @@
 #ifndef STATE_H_
 #define STATE_H_
 #include "SDL.h"
+#include "Sprite.h"
+#include "Music.h"
+using namespace std;
+
 class State{
 public:
 	State();
@@ -16,8 +20,8 @@ public:
 	void Update(float dt);
 	void Render();
 private:
-	//Sprite bg;
-	//Music music;
+	Sprite bg;
+	Music music;
 	bool quitRequested;
 };
 

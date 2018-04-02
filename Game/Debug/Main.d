@@ -19,7 +19,9 @@ Main.d: ../Main.cpp ../Game.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_loadso.h /usr/include/SDL2/SDL_log.h \
  /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
  /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_system.h \
- /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h ../State.h
+ /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h ../State.h \
+ ../Sprite.h /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
+ /usr/include/SDL2/SDL_mixer.h ../Music.h
 
 ../Game.h:
 
@@ -110,3 +112,13 @@ Main.d: ../Main.cpp ../Game.h /usr/include/SDL2/SDL.h \
 /usr/include/SDL2/SDL_version.h:
 
 ../State.h:
+
+../Sprite.h:
+
+/usr/include/SDL2/SDL_image.h:
+
+/usr/include/SDL2/SDL.h:
+
+/usr/include/SDL2/SDL_mixer.h:
+
+../Music.h:

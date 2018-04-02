@@ -1,4 +1,4 @@
-State.d: ../State.cpp ../State.h /usr/include/SDL2/SDL.h \
+Sprite.d: ../Sprite.cpp ../Sprite.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_platform.h \
  /usr/include/SDL2/begin_code.h /usr/include/SDL2/close_code.h \
@@ -20,10 +20,10 @@ State.d: ../State.cpp ../State.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_messagebox.h /usr/include/SDL2/SDL_power.h \
  /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
- ../Sprite.h /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
- /usr/include/SDL2/SDL_mixer.h ../Music.h
+ /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
+ /usr/include/SDL2/SDL_mixer.h ../Game.h ../State.h ../Music.h
 
-../State.h:
+../Sprite.h:
 
 /usr/include/SDL2/SDL.h:
 
@@ -111,12 +111,14 @@ State.d: ../State.cpp ../State.h /usr/include/SDL2/SDL.h \
 
 /usr/include/SDL2/SDL_version.h:
 
-../Sprite.h:
-
 /usr/include/SDL2/SDL_image.h:
 
 /usr/include/SDL2/SDL.h:
 
 /usr/include/SDL2/SDL_mixer.h:
+
+../Game.h:
+
+../State.h:
 
 ../Music.h:

@@ -6,16 +6,22 @@
 CPP_SRCS += \
 ../Game.cpp \
 ../Main.cpp \
+../Music.cpp \
+../Sprite.cpp \
 ../State.cpp 
 
 OBJS += \
 ./Game.o \
 ./Main.o \
+./Music.o \
+./Sprite.o \
 ./State.o 
 
 CPP_DEPS += \
 ./Game.d \
 ./Main.d \
+./Music.d \
+./Sprite.d \
 ./State.d 
 
 
