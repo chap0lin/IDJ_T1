@@ -15,7 +15,7 @@ GameObject::~GameObject(){
 }
 void GameObject::Update(float dt){
 	//percorrer o vetor  chamando update(dt) dos mesmos
-	int i;
+	unsigned int i;
 	for(i=0;i<components.size();i++){
 		components.at(i)->Update(dt);
 		/*if(components.at(i).isDead == true){
@@ -24,7 +24,7 @@ void GameObject::Update(float dt){
 	}
 }
 void GameObject::Render(){
-	int i;
+	unsigned int i;
 	for(i=0;i<components.size();i++){
 		components.at(i)->Render();
 	}
@@ -41,7 +41,7 @@ void GameObject::AddComponent(Component* cpt){
 }
 void GameObject::RemoveComponent(Component* cpt){
 	//Procura e remove cpt do vetor de componentes
-	int i;
+	unsigned int i;
 	for(i=0;i<components.size();i++){
 		if(components.at(i).get() == cpt){
 			components.erase(components.begin()+i);
@@ -50,7 +50,7 @@ void GameObject::RemoveComponent(Component* cpt){
 	}
 }
 Component* GameObject::GetComponent(string type){
-	int i;
+	unsigned int i;
 	for(i=0;i<components.size();i++){
 		if(components.at(i)->Is(type))
 			return components.at(i).get();

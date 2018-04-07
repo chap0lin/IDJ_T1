@@ -58,7 +58,7 @@ void State::Update(float dt){
 	do elemento.
 	*/
 	Input();
-	int i;
+	unsigned int i;
 	for(i=0;i<objectArray.size();i++){
 		objectArray.at(i)->Update(dt);
 	}
@@ -79,7 +79,7 @@ void State::Update(float dt){
 }
 
 void State::Render(){
-	int i;
+	unsigned int i;
 	for(i=0;i<objectArray.size();i++){
 		objectArray.at(i)->Render();
 	}
@@ -152,8 +152,8 @@ void State::Input() {
 			}
 			// Se não, crie um objeto
 			else {
-				float angle = (rand()%360)*PI/180;;
-				Vec2 objPos = { mouseX + sin(angle)*200 ,mouseY + cos(angle)*200 };
+				double angle = (rand()%360)*PI/180;;
+				Vec2 objPos = { (float)mouseX + (float)sin(angle)*200 ,(float)mouseY + (float)cos(angle)*200 };
 				AddObject((int)objPos.x, (int)objPos.y);
 			}
 		}
